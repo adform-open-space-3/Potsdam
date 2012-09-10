@@ -1,0 +1,17 @@
+{
+  "name": "Potsdam",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Potsdam - let's you read and input all the information about your conference.",
+  "author": "oss@adform.com",
+  "dependencies": {
+    "express": "3.0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adform/Feedback.git"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
