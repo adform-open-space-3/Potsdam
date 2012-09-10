@@ -5,7 +5,9 @@
   "description": "Potsdam - let's you read and input all the information about your conference.",
   "author": "oss@adform.com",
   "dependencies": {
-    "express": "3.0.x"
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "mongoose": "3.1.x",
   },
   "repository": {
     "type": "git",
