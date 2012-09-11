@@ -2,6 +2,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     http = require('http'),
     path = require('path'),
+    expressUglify = require('express-uglify'),
     routes = require('./routes'),
     app = express();
 
@@ -24,6 +25,9 @@ app.configure('development', function(){
 
 app.configure('production', function(){
   app.use(express.errorHandler());
+  app.use(expressUglify.middleware({
+    src: __dirname + '/public'
+  }));
 });
 
 routes(app);
