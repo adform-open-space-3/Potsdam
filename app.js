@@ -1,15 +1,20 @@
-var express = require('express');
-var app = module.exports = express();
-var mongoose = require('mongoose');
+var express = require('express'),
+    mongoose = require('mongoose'),
+    http = require('http'),
+    path = require('path'),
+    routes = require('./routes'),
+    app = express();
 
 app.configure(function(){
+  app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
-  app.use(express.bodyParser());
+  app.use(express.favicon());
   app.use(express.cookieParser());
   app.use(express.session({ secret: 'topsecret' }));
+  app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.static(__dirname + '/public'));
+  app.use(express.static(path.join(__dirname, '/public')));
 });
 
 app.configure('development', function(){
@@ -21,6 +26,6 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
-require('./routes')(app);
+routes(app);
 
-app.listen(process.env.PORT || 3000);
+http.createServer(app).listen(app.get('port'));
