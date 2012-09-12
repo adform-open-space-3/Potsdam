@@ -4,6 +4,7 @@ var express = require('express'),
     path = require('path'),
     expressUglify = require('express-uglify'),
     routes = require('./routes'),
+    models = require('./models')(mongoose),
     app = express();
 
 app.configure(function(){
@@ -34,6 +35,6 @@ app.configure('production', function(){
   mongoose.connect('mongodb://heroku_app7474069:h6iu4tbu27gduu4flfa4o51ant@ds037627-a.mongolab.com:37627/heroku_app7474069');
 });
 
-routes(app);
+routes(app, models);
 
 http.createServer(app).listen(app.get('port'));

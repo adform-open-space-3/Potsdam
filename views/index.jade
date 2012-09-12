@@ -2,3 +2,8 @@ extends layout
 
 block content
   h1= 'Potsdam'
+
+  ul
+    each feedback in feedbacks
+      li
+        =feedback.answer

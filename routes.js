@@ -1,5 +1,9 @@
-module.exports = function(app){
+module.exports = function(app, models){
   app.get('/', function(req, res){
-    res.render('index');
+    models.feedbacks.find({}, function(err, docs){
+      res.render('index', {
+          feedbacks: docs
+      });
+    });
   });
 };
