@@ -21,6 +21,8 @@ app.configure(function(){
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
   app.use(express.logger());
+
+  mongoose.connect('mongodb://localhost/potsdam');
 });
 
 app.configure('production', function(){
@@ -28,6 +30,8 @@ app.configure('production', function(){
   app.use(expressUglify.middleware({
     src: __dirname + '/public'
   }));
+
+  mongoose.connect('mongodb://heroku_app7474069:h6iu4tbu27gduu4flfa4o51ant@ds037627-a.mongolab.com:37627/heroku_app7474069');
 });
 
 routes(app);
