@@ -32,7 +32,7 @@ block content
       select(id=presentation.Url
              name="rating"
              data-native-menu="false")
-        - ratings = [ {i: -1, text: "Rate"}, {i: 5, text: "5 - Great"}, {i: 4, text: "4"}, {i: 3, text: "3"}, {i: 2, text: "2"}, {i: 1, text: "1 - Poor"}]
+        - var ratings = [ {i: -1, text: "Rate"}, {i: 5, text: "5 - Great"}, {i: 4, text: "4"}, {i: 3, text: "3"}, {i: 2, text: "2"}, {i: 1, text: "1 - Poor"}]
         each item in ratings
           option(value=item.i
                  selected=feedback.rating == item.i)=item.text

@@ -15,6 +15,7 @@ module.exports = function(mongoose) {
         return item;
       }
     }
+    return {};
   }
 
   schema.methods.addFeedback = function(feedback){

@@ -1,8 +1,11 @@
 module.exports = function(app, models){
   app.get('/', function(req, res){
-    res.render('index', {
-        agenda: models.agenda
-    });
+    doWithUser(req, res, function(user){
+      res.render('index', {
+        agenda: models.agenda,
+        user: user
+      });
+    })
   });
 
   app.get('/:presenter', function(req, res){

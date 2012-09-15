@@ -4,10 +4,13 @@ block content
   div(data-role='header')
     h1(style='margin-left: 10%; margin-right: 10%')=title
     a(href='/about', data-icon='info', class='ui-btn-right', data-iconpos='notext') About
+
   div(data-role='content')
     ul(data-role='listview', data-filter='true', data-filter-placeholder='Search')
       each item in agenda
-        li
+        - var feedback = user.getFeedback(item.Url)
+        - var icon = typeof feedback.rating === 'undefined' ? 'arrow-r' : 'check'
+        li(data-icon=icon)
           a(href=item.Url)
             img(src=item.Img, class='ul-li-thumb', style='height:80px; width:80px')
             h3.ui-li-heading
