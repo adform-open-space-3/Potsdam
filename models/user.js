@@ -1,10 +1,12 @@
 module.exports = function(mongoose) {
 
   this.model = mongoose.model(
-      'feedbacks',
+      'users',
       new mongoose.Schema({
-        presenter: String,
-        rating: Number
+        feedbacks: [{
+          presenter: String,
+          rating: Number
+        }]
       })
   );
 
