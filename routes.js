@@ -8,9 +8,9 @@ module.exports = function(app, models){
   app.get('/:presenter', function(req, res){
     var presentation;
     for (var i in models.agenda){
-      var val = models.agenda[i];
-      if (val.Url === req.params.presenter.toLowerCase()){
-        presentation = val;
+      var item = models.agenda[i];
+      if (item.Url === req.params.presenter.toLowerCase()){
+        presentation = item;
       }
     }
 
@@ -26,7 +26,8 @@ module.exports = function(app, models){
         presenter: req.body.presenter,
       }
 
-      user.feedbacks.push(feedback);
+      user.addFeedback(feedback);
+      console.log(user);
     });
 
     res.redirect('/');
