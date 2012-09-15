@@ -2,3 +2,4 @@
 # Install with 'npm install -g nodemon' then start your app with 'nodemon server.js'
 
 /.git/*
+.swp
