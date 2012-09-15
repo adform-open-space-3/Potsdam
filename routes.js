@@ -36,18 +36,18 @@ module.exports = function(app, models){
 
   function doWithUser(req, res, callback){
     var uid = req.cookies.uid;
-    if (typeof uid === 'undefined'){
-      createUser(req, res, callback);
-    }
-    else{
+    if (uid){
       models.user.findById(uid, function(err, user){
-        if (typeof user === 'undefined'){
-          createUser(req, res, callback);
-        }
-        else{
+        if (user){
           callback(user);
         }
+        else{
+          createUser(req, res, callback);
+        }
       });
+    }
+    else{
+      createUser(req, res, callback);
     }
   }
 

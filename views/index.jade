@@ -9,7 +9,7 @@ block content
     ul(data-role='listview', data-filter='true', data-filter-placeholder='Search')
       each item in agenda
         - var feedback = user.getFeedback(item.Url)
-        - var icon = typeof feedback.rating === 'undefined' ? 'arrow-r' : 'check'
+        - var icon = feedback.rating ? 'check' : 'arrow-r'
         li(data-icon=icon)
           a(href=item.Url)
             img(src=item.Img, class='ul-li-thumb', style='height:80px; width:80px')

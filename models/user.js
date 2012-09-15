@@ -21,12 +21,12 @@ module.exports = function(mongoose) {
   schema.methods.addFeedback = function(feedback){
     var item = this.getFeedback(feedback.presenter);
 
-    if (typeof item === 'undefined'){
-      this.feedbacks.push(feedback);
-    }
-    else{
+    if (item){
       item.rating = feedback.rating;
       item.comment = feedback.comment;
+    }
+    else{
+      this.feedbacks.push(feedback);
     }
   }
 
