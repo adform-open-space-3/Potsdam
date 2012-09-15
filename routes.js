@@ -21,13 +21,7 @@ module.exports = function(app, models){
 
   app.post('/feedback', function(req, res){
     doWithUser(req, res, function(user){
-      var feedback = {
-        rating: req.body.rating,
-        presenter: req.body.presenter,
-      }
-
-      user.addFeedback(feedback);
-      console.log(user);
+      user.addFeedback(req.body);
     });
 
     res.redirect('/');

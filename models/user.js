@@ -3,7 +3,8 @@ module.exports = function(mongoose) {
   var schema = new mongoose.Schema({
     feedbacks: [{
       presenter: String,
-      rating: Number
+      rating: Number,
+      comment: String
     }]
   });
 
@@ -24,6 +25,7 @@ module.exports = function(mongoose) {
     }
     else{
       item.rating = feedback.rating;
+      item.comment = feedback.comment;
     }
   }
 
