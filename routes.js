@@ -14,14 +14,18 @@ module.exports = function(app, models){
       }
     }
 
-    res.render('presentation', {
-      presentation: presentation
+    doWithUser(req, res, function(user){
+      res.render('presentation', {
+        presentation: presentation,
+        feedback: user.getFeedback(presentation.Url)
+      });
     });
   });
 
   app.post('/feedback', function(req, res){
     doWithUser(req, res, function(user){
       user.addFeedback(req.body);
+      user.save();
     });
 
     res.redirect('/');
@@ -33,12 +37,10 @@ module.exports = function(app, models){
       var user = new models.user;
       res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
       callback(user);
-      user.save();
     }
     else{
       models.user.findById(uid, function(err, user){
         callback(user);
-        user.save();
       });
     }
   }

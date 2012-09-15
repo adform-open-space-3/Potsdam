@@ -32,17 +32,16 @@ block content
       select(id=presentation.Url
              name="rating"
              data-native-menu="false")
-        option(value=-1) Rate
-        option(value=5) 5 - Great
-        option(value=4) 4
-        option(value=3) 3
-        option(value=2) 2
-        option(value=1) 1 - Poor
+        - ratings = [ {i: -1, text: "Rate"}, {i: 5, text: "5 - Great"}, {i: 4, text: "4"}, {i: 3, text: "3"}, {i: 2, text: "2"}, {i: 1, text: "1 - Poor"}]
+        each item in ratings
+          option(value=item.i
+                 selected=feedback.rating == item.i)=item.text
 
     div(data-role="fieldcontain")
       label(for="comment") Comment:
       textarea(id="comment"
                name="comment")
+        =feedback.comment
 
     input(type="submit"
           value="Send"
