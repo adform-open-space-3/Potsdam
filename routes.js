@@ -37,14 +37,23 @@ module.exports = function(app, models){
   function doWithUser(req, res, callback){
     var uid = req.cookies.uid;
     if (typeof uid === 'undefined'){
-      var user = new models.user;
-      res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
-      callback(user);
+      createUser(req, res, callback);
     }
     else{
       models.user.findById(uid, function(err, user){
-        callback(user);
+        if (typeof user === 'undefined'){
+          createUser(req, res, callback);
+        }
+        else{
+          callback(user);
+        }
       });
     }
+  }
+
+  function createUser(req, res, callback){
+    var user = new models.user;
+    res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
+    callback(user);
   }
 };
