@@ -2,7 +2,7 @@ extends layout
 
 block content
   div(data-role='header')
-    h1=title
+    h1(style='margin-left: 10%; margin-right: 10%')=title
   div(data-role='content')
     ul(data-role='listview', data-filter='true', data-filter-placeholder='Search')
       each item in agenda
