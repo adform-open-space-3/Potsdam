@@ -32,7 +32,7 @@ app.configure('production', function(){
     src: __dirname + '/public'
   }));
 
-  mongoose.connect('mongodb://heroku_app7474069:h6iu4tbu27gduu4flfa4o51ant@ds037627-a.mongolab.com:37627/heroku_app7474069');
+  mongoose.connect(process.env.MONGOLAB_URI);
 });
 
 routes(app, models);
