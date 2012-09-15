@@ -1,5 +1,19 @@
 extends layout
 
 block content
-  img(src=presentation.Img, style='height:50px; width:50px')
+  .ui-header.ui-bar-a
+    a.ui-btn-left.ui-btn.ui-btn-up-a.ui-btn-icon-left.ui-btn-corner-all.ui-shadow(href="/")
+      span.ui-btn-inner.ui-btn-corner-all
+        span.ui-btn-text Home
+        span.ui-icon.ui-icon-home.ui-icon-shadow
+    h1.ui-title
+      &nbsp;
 
+  .ui-content
+    h3.presenter
+      img(src=presentation.Img
+          width="50px"
+          height="50px"
+          alt=presentation.Presenter)
+      span=presentation.Presenter
+    p.clear=presentation.Topic
