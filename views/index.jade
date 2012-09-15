@@ -1,9 +1,16 @@
 extends layout
 
 block content
-  h1 Potsdam
-
-  ul
-    each feedback in feedbacks
-      li
-        =feedback.answer
+  div(data-role='header')
+    h1 Potsdam
+  div(data-role='content')
+    ul(data-role='listview', data-inset='true')
+      each item in agenda
+        li
+          a(href=item.Url)
+            h3.ui-li-heading
+              img(src=item.Img, style='height:50px; width:50px')
+              =item.Presenter
+            .ui-li-desc
+              span=item.Time
+              span=item.Topic
