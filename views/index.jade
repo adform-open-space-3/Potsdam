@@ -10,7 +10,7 @@ block content
           a(href=item.Url)
             h3.ui-li-heading
               img(src=item.Img, style='height:50px; width:50px')
-              =item.Presenter
+              span(style='margin-left: 5px')=item.Presenter
             .ui-li-desc
-              span=item.Time
-              span=item.Topic
+              strong=item.Time
+              span(style='margin-left: 5px')=item.Topic
