@@ -1,7 +1,7 @@
 var urlify = require('urlify').create({
   szToSs: true,
-  spaces: "-",
-  nonPrintable: "-",
+  spaces: '-',
+  nonPrintable: '-',
   trim: true
 });
 
