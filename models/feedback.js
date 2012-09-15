@@ -3,7 +3,8 @@ module.exports = function(mongoose) {
   this.model = mongoose.model(
       'feedbacks',
       new mongoose.Schema({
-        answer: String
+        presenter: String,
+        rating: Number
       })
   );
 

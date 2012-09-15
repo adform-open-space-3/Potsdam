@@ -18,4 +18,13 @@ module.exports = function(app, models){
       presentation: presentation
     });
   });
+
+  app.post('/feedback', function(req, res){
+    var feedback = new models.feedback
+    feedback.rating = req.body.rating;
+    feedback.presenter = req.body.presenter;
+    feedback.save();
+
+    res.redirect('/');
+  });
 };
