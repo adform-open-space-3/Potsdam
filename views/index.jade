@@ -8,9 +8,9 @@ block content
       each item in agenda
         li
           a(href=item.Url)
+            img(src=item.Img, class='ul-li-thumb', style='height:80px; width:80px')
             h3.ui-li-heading
-              img(src=item.Img, style='height:50px; width:50px')
-              span(style='margin-left: 5px')=item.Presenter
-            .ui-li-desc
+              span=item.Presenter
+            .ui-li-desc(style='margin-bottom:0')
               strong=item.Time
-              span(style='margin-left: 5px')=item.Topic
+              span(style='display:block')=item.Topic
