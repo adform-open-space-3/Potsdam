@@ -1,22 +1,22 @@
 {
-  'name': 'Potsdam',
-  'version': '0.0.1',
-  'private': true,
-  'description': "Potsdam - let's you read and input all the information about your conference.",
-  'author': 'oss@adform.com',
-  'dependencies': {
-    'express': '3.0.x',
-    'express-uglify': '0.3.x',
-    'jade': '0.27.x',
-    'mongoose': '3.1.x',
-    'urlify': '0.2.x'
+  "name": "Potsdam",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Potsdam - let's you read and input all the information about your conference.",
+  "author": "oss@adform.com",
+  "dependencies": {
+    "express": "3.0.x",
+    "express-uglify": "0.3.x",
+    "jade": "0.27.x",
+    "mongoose": "3.1.x",
+    "urlify": "0.2.x"
   },
-  'repository': {
-    'type': 'git',
-    'url': 'https://github.com/adform/Potsdam.git'
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adform/Potsdam.git"
   },
-  'engines': {
-    'node': '0.8.x',
-    'npm': '1.1.x'
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
   }
 }
