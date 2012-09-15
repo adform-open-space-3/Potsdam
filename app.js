@@ -7,6 +7,8 @@ var express = require('express'),
     models = require('./models')(mongoose),
     app = express();
 
+app.locals.title = "Agile Tour Vilnius 2012";
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
