@@ -9,7 +9,7 @@ var agenda = require('./agenda.json');
 
 for (var i in agenda) {
   var val = agenda[i];
-  val.Url = urlify(val.Presenter);
+  val.Url = urlify(val.Presenter).toLowerCase();
 }
 
 module.exports = agenda;

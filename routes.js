@@ -15,7 +15,7 @@ module.exports = function(app, models){
     var presentation;
     for (var i in models.agenda) {
       var val = models.agenda[i];
-      if (val.Url.toLowerCase() === req.params.presenter.toLowerCase()) {
+      if (val.Url === req.params.presenter.toLowerCase()) {
         presentation = val;
       }
     }
