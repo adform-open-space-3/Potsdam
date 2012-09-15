@@ -6,6 +6,7 @@ module.exports = function(app, models){
       });
     });
   });
+
   app.get('/agenda', function(req, res){
     res.render('agenda', {
       agenda: models.agenda
