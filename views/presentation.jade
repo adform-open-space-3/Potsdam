@@ -4,11 +4,16 @@ block content
   div(data-role="header")
     a(data-role="button"
       data-icon="home"
+      data-direction="reverse"
       href="/") Home
     h1
       &nbsp;
 
-  div(data-role="content")
+  form(data-role="content"
+       action="/feedback"
+       method="post"
+       data-ajax="false")
+
     h3(data-nav-title)
       img(src=presentation.Img
           width="50px"
@@ -17,9 +22,14 @@ block content
       span(style='margin-left:5px')=presentation.Presenter
     p.clear=presentation.Topic
 
+    input(type="hidden"
+          name="presenter"
+          value=presentation.Url)
+
     div(data-role="fieldcontain")
       label(for=presentation.Url) Rating:
       select(id=presentation.Url
+             name="rating"
              data-native-menu="false")
         option(value=-1) Rate
         option(value=5) 5 - Great
@@ -28,7 +38,10 @@ block content
         option(value=2) 2
         option(value=1) 1 - Poor
 
-    a(data-role="button"
-      data-icon="check"
-      data-theme="b"
-      href="/") Send
+    input(type="submit"
+          value="Send"
+          data-icon="check"
+          data-theme="b"
+          data-direction="reverse"
+          data-nav-type="save"
+          href="/")
