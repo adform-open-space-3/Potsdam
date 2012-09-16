@@ -10,7 +10,7 @@ var urlify = require('urlify').create( {
 var agenda = require('./agenda.json');
 
 _.each(agenda, function(item) {
-	item.Url = urlify(item.Presenter).toLowerCase();
+  item.Url = urlify(item.Presenter).toLowerCase();
 });
 
 module.exports = agenda;
