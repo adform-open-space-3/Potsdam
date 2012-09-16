@@ -30,6 +30,11 @@ module.exports = function(mongoose) {
     }
   };
 
+  schema.methods.hasRated = function(presenter) {
+    var feedback = this.getFeedback(presenter) || {};
+    return feedback['rating'] != undefined;
+  };
+
   this.model = mongoose.model('users', schema);
 
   return this;

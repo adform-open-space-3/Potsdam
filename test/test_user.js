@@ -47,4 +47,18 @@ describe('User', function() {
       user.feedbacks[0].rating.should.equal(4);
     });
   });
+
+  describe('#hasRated()', function() {
+    it('should return false if presenter was not rated', function() {
+      user.hasRated('luke').should.not.be.ok;
+    });
+
+    it('should return true if presenter was rated', function() {
+      user.addFeedback({
+        presenter: 'vader',
+        rating: 3
+      });
+      user.hasRated('vader').should.be.ok;
+    });
+  });
 });
