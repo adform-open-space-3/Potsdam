@@ -29,9 +29,8 @@ module.exports = function(app, models) {
     doWithUser(req, res, function(user) {
       user.addFeedback(req.body);
       user.save();
+      res.redirect('/');
     });
-
-    res.redirect('/');
   });
 
   function doWithUser(req, res, callback) {
@@ -53,7 +52,7 @@ module.exports = function(app, models) {
 
   function createUser(req, res, callback) {
     var user = new models.User();
-    res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
     callback(user);
+    res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
   }
 };
