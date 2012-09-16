@@ -12,7 +12,7 @@ module.exports = function(mongoose) {
 
   schema.methods.getFeedback = function(presenter) {
     return _.find(this.feedbacks, function(item) {
-        item.presenter === presenter;
+      return item.presenter === presenter;
     });
   };
 
