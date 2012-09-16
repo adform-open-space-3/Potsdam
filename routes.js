@@ -17,12 +17,17 @@ module.exports = function(app, models) {
       }
     }
 
-    doWithUser(req, res, function(user) {
-      res.render('presentation', {
-        presentation: presentation,
-        feedback: user.getFeedback(presentation.Url) || {}
+    if (presentation) {
+      doWithUser(req, res, function(user) {
+        res.render('presentation', {
+          presentation: presentation,
+          feedback: user.getFeedback(presentation.Url) || {}
+        });
       });
-    });
+    }
+    else {
+      res.redirect('/');
+    }
   });
 
   app.post('/feedback', function(req, res) {
