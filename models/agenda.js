@@ -1,5 +1,3 @@
-var _ = require('underscore');
-
 var urlify = require('urlify').create( {
   szToSs: true,
   spaces: '-',
@@ -9,8 +7,8 @@ var urlify = require('urlify').create( {
 
 var agenda = require('./agenda.json');
 
-_.each(agenda, function(item) {
-  item.Url = urlify(item.Presenter).toLowerCase();
+agenda.forEach(function(element) {
+  element.Url = urlify(element.Presenter).toLowerCase();
 });
 
 module.exports = agenda;
