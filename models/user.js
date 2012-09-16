@@ -1,5 +1,7 @@
 module.exports = function(mongoose) {
 
+  var _ = require('underscore');
+
   var schema = new mongoose.Schema({
     feedbacks: [{
       presenter: String,
@@ -9,13 +11,9 @@ module.exports = function(mongoose) {
   });
 
   schema.methods.getFeedback = function(presenter) {
-    for (var i = 0; i<this.feedbacks.length; i++) {
-      var item = this.feedbacks[i];
-      if (item.presenter === presenter) {
-        return item;
-      }
-    }
-    return null;
+    return _.find(this.feedbacks, function(fb) {
+        fb.presenter === presenter;
+    });
   };
 
   schema.methods.addFeedback = function(feedback) {
