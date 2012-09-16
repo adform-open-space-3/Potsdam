@@ -20,7 +20,7 @@ module.exports = function(app, models) {
     doWithUser(req, res, function(user) {
       res.render('presentation', {
         presentation: presentation,
-        feedback: user.getFeedback(presentation.Url)
+        feedback: user.getFeedback(presentation.Url) || {}
       });
     });
   });
