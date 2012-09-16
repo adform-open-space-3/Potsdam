@@ -8,27 +8,27 @@ module.exports = function(mongoose) {
     }]
   });
 
-  schema.methods.getFeedback = function(presenter){
-    for (var i in this.feedbacks){
+  schema.methods.getFeedback = function(presenter) {
+    for (var i = 0; i<this.feedbacks.length; i++) {
       var item = this.feedbacks[i];
       if (item.presenter === presenter) {
         return item;
       }
     }
     return {};
-  }
+  };
 
-  schema.methods.addFeedback = function(feedback){
+  schema.methods.addFeedback = function(feedback) {
     var item = this.getFeedback(feedback.presenter);
 
-    if (item){
+    if (item) {
       item.rating = feedback.rating;
       item.comment = feedback.comment;
     }
-    else{
+    else {
       this.feedbacks.push(feedback);
     }
-  }
+  };
 
   this.model = mongoose.model('users', schema);
 

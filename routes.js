@@ -1,23 +1,23 @@
-module.exports = function(app, models){
-  app.get('/', function(req, res){
-    doWithUser(req, res, function(user){
+module.exports = function(app, models) {
+  app.get('/', function(req, res) {
+    doWithUser(req, res, function(user) {
       res.render('index', {
         agenda: models.agenda,
         user: user
       });
-    })
+    });
   });
 
-  app.get('/:presenter', function(req, res){
+  app.get('/:presenter', function(req, res) {
     var presentation;
-    for (var i in models.agenda){
+    for (var i = 0; i<models.agenda.length; i++) {
       var item = models.agenda[i];
-      if (item.Url === req.params.presenter.toLowerCase()){
+      if (item.Url === req.params.presenter.toLowerCase()) {
         presentation = item;
       }
     }
 
-    doWithUser(req, res, function(user){
+    doWithUser(req, res, function(user) {
       res.render('presentation', {
         presentation: presentation,
         feedback: user.getFeedback(presentation.Url)
@@ -25,8 +25,8 @@ module.exports = function(app, models){
     });
   });
 
-  app.post('/feedback', function(req, res){
-    doWithUser(req, res, function(user){
+  app.post('/feedback', function(req, res) {
+    doWithUser(req, res, function(user) {
       user.addFeedback(req.body);
       user.save();
     });
@@ -34,25 +34,25 @@ module.exports = function(app, models){
     res.redirect('/');
   });
 
-  function doWithUser(req, res, callback){
+  function doWithUser(req, res, callback) {
     var uid = req.cookies.uid;
-    if (uid){
-      models.user.findById(uid, function(err, user){
-        if (user){
+    if (uid) {
+      models.User.findById(uid, function(err, user) {
+        if (user) {
           callback(user);
         }
-        else{
+        else {
           createUser(req, res, callback);
         }
       });
     }
-    else{
+    else {
       createUser(req, res, callback);
     }
   }
 
-  function createUser(req, res, callback){
-    var user = new models.user;
+  function createUser(req, res, callback) {
+    var user = new models.User();
     res.cookie('uid', user._id, { maxAge: 2419200000}); //4 weeks
     callback(user);
   }
