@@ -13,13 +13,9 @@ module.exports = function(app, models) {
   });
 
   app.get('/:presenter', function(req, res) {
-    var presentation;
-    for (var i = 0; i<models.agenda.length; i++) {
-      var item = models.agenda[i];
-      if (item.Url === req.params.presenter.toLowerCase()) {
-        presentation = item;
-      }
-    }
+    var presentation = models.agenda.filter(function(element) {
+      return element.Url === req.params.presenter.toLowerCase(); 
+    })[0];
 
     if (presentation) {
       getUser(req, res, function(user) {
