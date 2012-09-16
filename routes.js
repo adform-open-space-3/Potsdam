@@ -7,6 +7,10 @@ module.exports = function(app, models) {
       });
     });
   });
+  
+  app.get('/about', function(req, res) {
+    res.redirect('http://www.agileturas.lt/');
+  });
 
   app.get('/:presenter', function(req, res) {
     var presentation;
@@ -17,12 +21,17 @@ module.exports = function(app, models) {
       }
     }
 
-    doWithUser(req, res, function(user) {
-      res.render('presentation', {
-        presentation: presentation,
-        feedback: user.getFeedback(presentation.Url) || {}
+    if (presentation) {
+      doWithUser(req, res, function(user) {
+        res.render('presentation', {
+          presentation: presentation,
+          feedback: user.getFeedback(presentation.Url) || {}
+        });
       });
-    });
+    }
+    else {
+      res.redirect('/');
+    }
   });
 
   app.post('/feedback', function(req, res) {
@@ -32,7 +41,7 @@ module.exports = function(app, models) {
       res.redirect('/');
     });
   });
-
+  
   function doWithUser(req, res, callback) {
     var uid = req.cookies.uid;
     if (uid) {
