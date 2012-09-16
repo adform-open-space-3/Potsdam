@@ -11,8 +11,8 @@ module.exports = function(mongoose) {
   });
 
   schema.methods.getFeedback = function(presenter) {
-    return _.find(this.feedbacks, function(fb) {
-        fb.presenter === presenter;
+    return _.find(this.feedbacks, function(item) {
+        item.presenter === presenter;
     });
   };
 
