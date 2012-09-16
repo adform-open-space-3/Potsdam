@@ -1,6 +1,6 @@
 module.exports = function(app, models) {
   app.get('/', function(req, res) {
-    doWithUser(req, res, function(user) {
+    getUser(req, res, function(user) {
       res.render('index', {
         agenda: models.agenda,
         user: user
@@ -22,7 +22,7 @@ module.exports = function(app, models) {
     }
 
     if (presentation) {
-      doWithUser(req, res, function(user) {
+      getUser(req, res, function(user) {
         res.render('presentation', {
           presentation: presentation,
           feedback: user.getFeedback(presentation.Url) || {}
@@ -35,14 +35,14 @@ module.exports = function(app, models) {
   });
 
   app.post('/feedback', function(req, res) {
-    doWithUser(req, res, function(user) {
+    getUser(req, res, function(user) {
       user.addFeedback(req.body);
       user.save();
       res.redirect('/');
     });
   });
   
-  function doWithUser(req, res, callback) {
+  function getUser(req, res, callback) {
     var uid = req.cookies.uid;
     if (uid) {
       models.User.findById(uid, function(err, user) {
