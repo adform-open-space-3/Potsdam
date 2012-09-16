@@ -10,4 +10,15 @@ describe('User', function() {
       should.not.exist(feedback);
     });
   });
+
+  describe('#addFeedback()', function() {
+    it('should set rating to null if it is less than zero', function() {
+      var user = new models.User();
+      user.addFeedback({
+        presenter: 'vader',
+        rating: -1
+      });
+      should.not.exist(user.feedbacks[0].rating);
+    });
+  });
 });

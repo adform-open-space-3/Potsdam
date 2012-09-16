@@ -19,6 +19,10 @@ module.exports = function(mongoose) {
   };
 
   schema.methods.addFeedback = function(feedback) {
+    if (feedback.rating < 0) {
+      feedback.rating = null;
+    }
+
     var item = this.getFeedback(feedback.presenter);
 
     if (item) {
