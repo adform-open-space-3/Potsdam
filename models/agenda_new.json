@@ -1,0 +1,324 @@
+[
+  {
+    "Time": "9.15 - 10.15",
+    "Topic": "Opening keynote - Why Agile Works",
+    "Track": "",
+    "Presenters":
+    [
+    {
+        "Name": "Dr. Alistair Cockburn",
+        "Bio": "Dr. Alistair Cockburn (pronounced Cō-burn) was voted one of the \"All-Time Top 150 i-Technology Heroes\" for his work in creating and steering Agile software development. He co-authored the Manifesto for Agile Software\n\nDevelopment and the \"Declaration of Interdependence,\" created the first Agile Software Development Conference, co-founded the Agile Project Leadership Network, served on the board of the AgileAlliance, designed the Crystal family of agile methodologies, and co-founded the International Consortium for Agile. Three of his books have won Jolt awards and been listed in \"The Top 100 Best Software Books of All Time\".\n\nHe consistently receives high ratings for his presentations and courses. Much of his material is online at http://Alistair.Cockburn.us.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/alistair-cockburn.jpg"  
+    }
+    ],
+    "Summary": "Dr. Alistair Cockburn, one of the founders of the Agile Software Development movement, lays out the foundations for effective software development. They are:\n\nCraft\nDevelopment viewed as a cooperative game\nFlow management\nDesign as knowledge acquisition\nSelf-awareness\nThese five cornerstones explain the success of effective teams, provide good advice to live and harried project teams, and create a sound basis for educating the next generation of developers. It is a rich subject, worth exploring and discussing after the talk.",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "10.15 - 10.30",
+    "Presenters":
+    [
+    {
+        "Name": "",
+        "Bio": "",
+        "Img": "http://www.placehold.it/80x80"  
+    }
+    ],
+    "Topic": "TALKSHOW: speakers lightning their talks",
+    "Track": "",
+    "Summary": "",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "11.00 - 11.45",
+    "Presenters":
+    [
+    {
+        "Name": "Vaidas Adomauskas",
+         "Bio": "Vaidas works as a Product Manager and Scrum Coach in Adform. He was part of the Scrum implementation team. Now he is responsible for one of the company key product as well as every day review and improvements of Scrum in Adform. Before returning to Lithuania he helped to implement Scrum in Lavasoft (Sweden).\n\nVaidas is sharing his experiences in http://scrum.agile.lt blog, gives presentations in international and Lithuanian IT/Agile conferences, as well as consults/runs trainings for companies implementing Agile methods. He is initiator and now president of Agile Lithuania community, which organizes Agile and Scrum user group meetings, and Agile conferences in Lithuania. He is Certified Scrum Professional (CSP), Certified Scrum Master (CSM), Certified Scrum Product Owner (CSPO), and member of Lithuanian Project Management Association (LPVA). Vaidas is teaching “Agile Project Management with Scrum” course at Vilnius University.",
+          "Img": "http://www.agileturas.lt/assets/img/people/80x80/vaidas_adomauskas.jpg"
+    } 
+    ],
+    "Topic": "Agile in Lithuania – innovation or a well going train? What is waiting for the ones that are late for it?",
+    "Track": "1",
+    "Summary": "When we introduced Scrum (one of Agile project management methods) in Lavasoft (Sweden), it allowed to put order to chaotic development process. The released version was with much better quality and more features compared to previous ones. When I was describing this project management method to my cousin, IT project manager in Lithuania, he was smiling. “It will never work in Lithuania, with our people” – was his conclusion. I never believed this. I came back to Lithuania. In 2009 we implemented and we are successfully using Scrum in Adform since. It was clear evidence – employees in Lithuania do not differ from the rest of the world. Project management methods that work abroad are well applicable in Lithuania as well.\n\nIn 2010, while organizing first Agile conference in Lithuania – Agile Tour Vilnius 2010 (http://2010.agileturas.lt) – we had trouble finding Lithuanian speakers who would have Agile experience in Lithuania. Nevertheless, we found few, and this conference became the birth for community of Agile practitioners. This community actively promotes Agile in Lithuania by sharing their experiences in different events.\n\nSo what is Agile project management? Why some project managers, managers or CEOs still think that these methods are not applicable in Lithuania, in their projects, companies? Which companies are using Agile and what benefits they claim to get (or not to get)? In this presentation I will share my experience implementing and using Scrum. I will also share my insights how, where, and why Agile project management methods are spreading in Lithuania.",
+    "Logo": "http://www.agileturas.lt/assets/img/logo_small_adform.png",
+    "Link": "http://www.adform.com/"
+  },
+  {
+    "Time": "11.00 - 11.45",
+    "Presenters":
+    [
+    {
+        "Name": "Lasse Ziegler",
+        "Bio": "Lasse Ziegler is an agile coach and trainer with many years of experience working with different scrum teams in a variety of organizations both small and large.\n\nIn the last 12 years Lasse has been a developer, architect, project manager, CTO and entrepreneur. Having been in different roles gives a coach good overview of different aspects of an organization as well as an understanding of their different needs. With this experience a coach is well equipped in delivering a end-to-end coaching experience where both the business as well as the development are engaged.", 
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/lasse-ziegler.jpg"
+    }
+    ],
+    "Topic": "Intro to PO role",
+    "Track": "2",
+   
+    "Summary": "A good product owner is probably the most important role in any Scrum project but for some reason they are exceedingly rare. Without one the development team is without direction and lost in a vast ocean of possibilities. Why is it that being a good product owner is difficult? What is expected and how do you become a good product owner. 
+
+In this session we will cover a number of common product owner anti-patterns to learn from. In addition we will describe some good practices and provide you with some tools to be more effective and help you become the good product owner that you always dreamed about.",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "11.00 - 11.45",
+    "Presenters":
+    [
+    {
+        "Name": "Valdis Iljuconoks",
+         "Bio": "Vladimir Ivanov is consultant and trainer in Project Management and IT Service Management, certified IPMA-B and ITIL Expert.\n\nBoard member at International Project Management Association at Latvia and IPMA 4 level certification system assessor (taking exams in Latvian, English and Russian).\n\nHelps companies to develop IT Service Management by adopting ITIL, COBIT and other frameworks in an Agile way.\n\nGives knowledge and skills in Project, Programme and Portfolio Management.\n\nCollecting votes to become a speaker at the first crowdsourced world-wide IT Service Management virtual conference at the 5th December: http://bit.ly/TFT2012 Have you voted already?",
+        "Img": "http://agileturas.lt/assets/img/people/80x80/vilnius_speakers/Valdis_Iljuconos.jpg"
+    }
+    ],
+    "Topic": "Lean Development with TFServices",
+    "Track": "3",
+    "Summary": "Vladimir will share his practical experience from case of insurance company in Russia. He installed Kanban board as a tool for IT management team to execute IT Service Management programme. Kanban board is great for workflow visualisation and can be used to improve efficiency of teams managing services and portfolios not only in IT, but also marketing, sales, production, operations etc. Want to learn how to do it yourself?",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/geta.png",
+    "Link": "http://www.geta.no/"
+  },
+  {
+    "Time": "11.00 - 17.30",
+    "Presenters":
+    [
+    {
+        "Name": "Adform",
+        "Bio": "",
+        "Img":  "/img/adform.png"  
+    }
+    ],
+    "Topic": "Software Development Open Space - Shipping software every hour ",
+    "Track": "",
+    "Summary": "During the session we will use continuous deployment and other good development practices to design, develop, test and ship new features for conference application.
+
+Everyone is invited to join us and contribute to development. Come and have fun",
+    "Logo": "http://www.agileturas.lt/assets/img/logo_small_adform.png",
+    "Link": "http://www.adform.com/"
+  },
+  {
+    "Time": "11.45 - 12.30",
+    "Presenters":
+    [
+    {
+        "Name": "Alexey Krivitsky",
+        "Bio": "Alexey Krivitsky is a\n\nCertified Scrum Trainer ®\nRuby on Rails and Java Developer\nFounder of Agile Eastern Europe Conference\nProject Manager and Team Lead for Software Teams\nAgile Evangelist, Coach and Scrum Master\nPublic Speaker\nand a Community Builder\nMore info can be found at a personal blog www.krivitsky.com or the company website www.scrumguides.com",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/alexey-krivitsky.jpg"
+    }
+    ],
+    "Topic": "The Recent History of Management. From the Era of Stagnation to the Renaissance.",
+    "Track": "1",
+    "Summary": "Iteration manager, integration mananer, release manager, communication manager, process manager, change manager, team coordination manager .... These titles are not uncommon in major IT companies. The *cast* of managers occupies the central position in the hierarchy of enterprises today. It is daily increasing its importance, closing on itself more feedback loops and taking on more responsibility.\n\nWhy is this happening? What are the risks? Where does this lead?\n\nStagnation of Management - is the name for the period that we have seen over the past few decades in various industries, and especially in the software development.\n\nHow not to lead a company into a dead end? How to get out of stagnation? How do successful enterprises organize their management structures?\n\nToday, we can see the revival of management. Lean, Agile, Scrum - these philosophies and approaches give us the impetus to the transformation and development of the latent potential of our companies, projects, teams, and employees.\n\nBut are we able to correctly perceive and use these advices?\n\nIn this talk, you will hear the epic of the highly successful corporation, from which only ruins remained. You'll learn about the two types of managers: the professor and entrepreneur. You will be introduced to the three areas of management and know that there are much more managers in your company than your HR department thinks.\n\nYou will discover a world of new management - the path of personal development and corporate renaissance.",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "11.45 - 12.30",
+    "Presenters":
+    [
+    {
+        "Name": "Vaida Masiulionytė",
+        "Bio": "Vaida Masiulionytė is working in IT industry for 10 years and holds Master degree in Computer Science. Vaida has passed through different roles in IT companies as IT teacher, Developer, Analyst, Team Leader, Project Manager and Scrum Master. For 6 years she is working with Geographical Information Systems (GIS) in largest Lithuanian GIS solution company – Hnit-Baltic, UAB.\n\nFor the last 4 years Vaida is teaching at Vilnius and Mykolo Romerio Universities, subjects like: GIS development, IT Process management (ITIL) and Spatial Database application. She is actively participating in agile community (is a board member of Lithuania Agile association) Her biggest passion is around the concepts of Agile Development principles and process management methodologies, so she is actively delivering speeches in various Universities and conferences.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/vaida_masiulionyte.jpg"  
+    }
+    ],
+    "Topic": "Moving to Agile: what are the changes and how to deal with them",
+    "Track": "2",
+    "Summary": "",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/hnit-baltic.png",
+    "Link": "http://www.hnit-baltic.lt/"
+  },
+  {
+    "Time": "11.45 - 12.30",
+    "Presenters":
+    [
+    {
+        "Name": "Mantas Klasavičius",
+        "Bio": "Infrastructure architect at Adform company with over 9 years of experience with background in Windows, Linux and networks administration. Currently he is specializing in high-performance computing, continuous deployment and Cloud services. His new passion is helping developers to reveal the beauty of monitoring. Mantas is a certified Cisco (CCNA) and Microsoft (MCSA, MCSE) specialist.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/Mantas_Klasavicius.jpg"  
+    }
+    ],
+    "Topic": "Metrics Driven Development (Adform case study)",
+    "Track": "3",
+    "Summary": "The presentation describes one start-up project and the way we solved problems and moved things forward to handle 70 000 requests per second from the initial 5 000 - with the same hardware. For developers - applications are the essence, but there are a lot more additional pieces that could influence reliability, accessibility and performance of applications. It will be explained how and why we attracted development guys to the world of monitoring and metrics, the sphere which was considered solely operations playground, how we combined different metrics: business, application, hardware, 3rd parties and metrics from the cloud to reach our goals, which tools and practices proved to be effective and which not.",
+    "Logo": "http://www.agileturas.lt/assets/img/logo_small_adform.png",
+    "Link": "http://www.adform.com/"
+  },
+  {
+    "Time": "13.30 - 14.15",
+    "Presenters":
+    [
+    {
+        "Name": "Vladimirs Ivanovs",
+        "Bio": "Vladimir Ivanov is consultant and trainer in Project Management and IT Service Management, certified IPMA-B and ITIL Expert.\n\nBoard member at International Project Management Association at Latvia and IPMA 4 level certification system assessor (taking exams in Latvian, English and Russian).\n\nHelps companies to develop IT Service Management by adopting ITIL, COBIT and other frameworks in an Agile way.\n\nGives knowledge and skills in Project, Programme and Portfolio Management.\n\nCollecting votes to become a speaker at the first crowdsourced world-wide IT Service Management virtual conference at the 5th December: http://bit.ly/TFT2012 Have you voted already?.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/Vladimirs_Ivanovs.jpg"
+    }
+    ],
+    "Topic": "No time to work on improvements? Find it with Kanban!",
+    "Track": "1",   
+    "Summary": "Vladimir will share his practical experience from case of insurance company in Russia. He installed Kanban board as a tool for IT management team to execute IT Service Management programme. Kanban board is great for workflow visualisation and can be used to improve efficiency of teams managing services and portfolios not only in IT, but also marketing, sales, production, operations etc. Want to learn how to do it yourself?",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "13.30 - 14.15",
+    "Presenters":
+    [
+    {
+        "Name": "Mantvydas Čekutis",
+        "Bio": "Mantvydas currently holds position of Project Manager and is one of Scrum pioneers in Affecto Lietuva. Affecto is the forerunner in the field of Enterprise Information Management, operational solutions and GIS services in the Northern Europe and Baltic countries. Affecto has always focus on understanding the business and how to improve the processes, cut down time-to-market, enabling customer to exploit the key value levers required to succeed in a multi-brand, multi-segment, multi-channel, multi-product, multi-partner world. By focusing on these values Affecto turned to Agile, which helps to achieve its objectives.",
+         "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/Mantvydas_Cekutis.jpg"  
+    }
+    ],
+    "Topic": "Challenges using Scrum in a project if your company is a sub-contractor",
+    "Track": "2",    
+    "Summary": "Just imagine that You come to a different country and get a team of consultants with whom You need to do their first SCRUM implementation project. On top of that, it’s not You who is managing the communication with the client, as You are only a sub-contractor. Not enough? You don’t speak Official project language, what makes communication with the client VERY difficult. Want to know how it goes so far?",
+    "Logo": "http://www.agileturas.lt/assets/img/vilnius_sponsors/small_affecto_logo.png",
+    "Link": "http://www.affecto.com/"
+  },
+  {
+    "Time": "13.30 - 14.15",
+    "Presenters":
+    [
+    {
+        "Name": "Armands Baranovskis",
+         "Bio": "Armands has been in the Information Technology industry for 9 years and currently is a solution architect in a recently founded company eBIT Ltd. His diverse professional interests span from SOA concepts and augmented reality to Agile practice implementation and usability.\n\nHe is also guest lecturer at Riga Technical University and Riga Business School.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/Armands_Baranovskis.jpg" 
+    }
+    ],
+    "Topic": "Making most of Scrum and Kanban with Jira",
+    "Track": "3",
+    "Summary": "Real life case study focusing on \"\"why?\"\" and \"\"how?\"\" Scrum and Kanban were implemented side by side in several maintenance projects.\n\nThe reason for this presentation is the fact that Scrum is widely used for IT development, however maintenance projects struggle with Scrum due to unpredictable nature of workload and drop Agile practices altogether. However Kanban can be used along side Scrum to cover for the unpredictable nature of demand as well as expose bottlenecks in current processes. Presentation will also show how these process tools were implemented from an everyday work perspective using standard possibilities of Atlassian Jira.",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/ebit.png",
+    "Link": "http://www.ebit.lv/"
+  },
+  {
+    "Time": "14.15 - 15.00",
+    "Presenters":
+    [
+    {
+        "Name": "Katja Zorina",
+        "Bio": "Katja is a creative technologist, an agile coach, a front-end enthusiast and a picky eye. A community energizer at Agile Finland and one of the people behind recent Scan-agile and Tampere Goes Agile conferences. ",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/katja-zorina.jpg"  
+    },
+     {
+        "Name": "Antti Salonen",
+        "Bio": "Antti is a designer at Kisko Labs working in and around the web. He is intrigued in making working between different talents and disciplines as smooth as possible. At work he dicovers new things about all things from web-frontend every day, at home he twists buttons and sliders to make synths sing. 
+
+This year Katja and Antti founded and made happen Finland's first front-end conference - Webshaped, which brought together design and development.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/antti-salonen.jpg"  
+    }
+    ],
+    "Topic": "The way from idea to value. Simplified.",
+    "Track": "1",
+    "Summary": "Hello, business person. Have a nice idea? But how to communicate it to software makers?\n\nHello, software maker. So you build things. But are you building the same thing the product owner thinks you are?\n\nIs it even the right thing to build? How do you know?\n\nLet's go through some common anti-patterns on your way from idea to value and think of better ways to build awesome user experiences together.",
+    "Logo": "",
+    "Link": ""
+  },
+  {
+    "Time": "14.15 - 15.00",
+    "Presenters":
+    [
+    {
+        "Name": "Sigizmundas Jermolovicius",
+        "Bio": "Unit Manager and Offshore Delivery manager at Exigen Services Lietuva. Sigis Jermolovičius has an extensive background in project management and service delivery stretching over 15 years. He has experience stretching from devices programming in C or PHP sites development to Java base enterprise solutions. Most recent experience with Agile is in managing large/complex projects for large worldwide insurance companies and offshore management of insurance product (Exigen Insurance Suite) development. Sigis exposure to Agile was back in 2007, when the Exigen has acquired StarSoft Labs (leading Agile adopter in Russia) and received CSM certificate from Jeff Sutherland’s hands. Influenced by StarSoft successes of agile adoption Exigen decided to move away from traditional project management and have a more flexible approach to delivery. He is now Offshore Delivery manager for Exigen Insurance Suite, the insurance industry most modern, most complete, modular and end-to-end solution.",
+         "Img": "http://www.agileturas.lt/assets/img/people/80x80/sigizmundas-jermolovicius.jpg"
+    }
+    ],
+    "Topic": "Working in agile multi-location project with team over 100 peoples - lessons learned, techniques used.",
+    "Track": "2",
+    "Summary": "Will talk problems and solutions that there made in solving problems such as size (about 100 people in total, more than 5 years long), multi-location (Vilnius, China, US), remote PO (teams in Eastern Europe, PO in US), ~550 000 LOC's, multiple customers. Will talk about Agile modifications made, to keep it running. Will talk about CI techniques used to maintain project in shape.",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/exigenServices.png",
+    "Link": "http://www.exigenservices.lt/"
+  },
+  {
+    "Time": "14.15 - 15.00",
+    "Presenters":
+    [
+    {
+        "Name": "Gediminas Guoba",
+         "Bio": "Gediminas Guoba works as Software Architect at Adform Lithuania having 12 years of experience developing software. Currently his main areas of work is distributed computing, clouds and continuous delivery. Gediminas Guoba is „Certified Hadoop Developer“, „Microsoft Certified Solution Developer”. Also he is experienced Puppet, Linux Shell, Windows PowerShell, MsBuild and Ant developer.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/Gediminas_Guoba.jpg"
+    }
+    ],
+    "Topic": "Continuous Delivery",
+    "Track": "3",
+    "Summary": "By Wikipedia, Continuous delivery (CD) is a Pattern Language in growing use in software development to improve the process of software delivery. But that talk is not about theory. It is about real life experience and natural migration to Continuous delivery, about lessons learned and results achieved.",
+    "Logo": "http://www.agileturas.lt/assets/img/logo_small_adform.png",
+    "Link": "http://www.adform.com/"
+  },
+  {
+    "Time": "15.30 - 16.15",
+    "Presenters":
+    [
+    {
+        "Name": "Laimonas Lileika",
+         "Bio": "While working in the IT industry for 6 years, Laimonas has gained an extensive experience and knowledge by managing a wide range of projects varying from software development and software as a service, to IT security and infrastructure implementation. Currently he works for a challenging multicultural, multinational CSC company where with the help of virtual teams delivers multiple projects to corporate clients. A strong Agile background gives him a unique chance to employ Agile methods within the organization that has been committed to a traditional project management for over 50 years. Laimonas is a Certified Scrum Product Owner, and holder of CompTIA Project+ project management certificate.",
+         "Img": "http://www.agileturas.lt/assets/img/people/80x80/Laimonas_Lileika.jpg"  
+    }
+    ],
+    "Topic": "Managing project performace: alignment of Agile and traditional metrics",
+    "Track": "1",
+    "Summary": "Managing project performance is never an easy thing to do. The speech will align two different ways of doing it: Agile and traditional one, which is based on still the mostly used project management standard - PMBOK. This session will not learn you about Agile and PMBOK metrics. It rather will demonstrate how to interpret traditional project metrics aligning them with agile project metrics.\n\nPrerequisites: good understanding of Agile Scrum methodology and metrics, as well as good understanding of AC, EV, SPI, CPI and other traditional project management metrics.",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/CSC_Baltic.png",
+    "Link": "http://www.csc.com//"
+  },
+  {
+    "Time": "15.30 - 16.15",
+    "Presenters":
+    [
+    {
+        "Name": "David Weir",
+        "Bio": "David Weir has worked over 15 years with Software Development and more than 10 years with agile techniques as Head of Development/Quality/Delivery/Architecture in different companies across the financial, utilities and regulated markets. One of his main passions has been to use agile methodologies and agile engineering practices to create high productive delivery teams. An early adopter of DSDM becoming certified in 2001, progressing into other methodologies Scrum (master/coach), Lean, Kanban, XP and PrinceLite. David is keen to ensure Methodologies/Frameworks are supported by equally important engineering practices, such as TDD, BDD, Continuous Integration, planning poker and refactoring. Currently David is responsible for several development teams across the UK and Lithuania, promoting tried and tested agile delivery for Callcredit Information Group.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/david_weir.jpg"  
+    },
+    {
+    "Name": "Graham Fisher",
+        "Bio": "",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/graham-fisher.png"  
+    }
+    ],
+    "Topic": "Scaling Agility Across the Enterprise",
+    "Track": "2",
+    "Summary": "Whilst agile frameworks are excellent at encouraging and tracking velocity for individual projects, when you are running 20+ projects at the same time these can sometimes be at the consequence of the bigger picture. Our discussion, presents a number of techniques that can be used to observe trends and ensure both technical & project strategies are achieved across the enterprise, which complement projects remaining agile. You can study any number of Agile practices. Scrum, DSDM, XP, Kanban, Lean, TDD, Pair Programming, Continuous Delivery..... we'll let you know what's worked in the enterprise, what hasn't and why so hopefully you can avoid some of the many pitfalls along the path to sustained Agility, with some humble suggestions in tow.",
+    "Logo": "http://www.agileturas.lt/assets/img/kaunas_sponsors/cc_sponsor_logo.png",
+    "Link": "http://www.callcredit.com/"
+  },
+  {
+    "Time": "15.30 - 16.15",
+    "Presenters":
+    [
+    {
+        "Name": "Aleksej Kovaliov",
+           "Bio": "Programme / Project Manager. Experienced in both established & start-up businesses. Experienced in E-Government, Internet, Security & Control type systems. Up to date on latest IT Development and Service Delivery practices including certified Prince2 and Agile Project Management. Experienced in leading, motivating and developing people. Record of success launching national level E-Government systems and building up market leading SW development departments. Progressively expanded roles in IT industry both horizontally and vertically.",
+        "Img": "http://www.agileturas.lt/assets/img/people/80x80/vilnius_speakers/aleksej_kovaliov.jpg" 
+    }
+    ],
+    "Topic": "Agile in public procurement projects",
+    "Track": "3",
+    "Summary": "Issues of Agile project management in government projects under public procurement.",
+    "Logo": "http://www.agileturas.lt/assets/img/companies/bdc.gif",
+    "Link": "http://www.bdc.lt/"
+  },
+  {
+    "Time": "16.30 - 17.30",
+    "Presenters":
+    [
+    {
+        "Name": "Gojko Adzic",
+         "Bio": "Gojko Adzic is a strategic software delivery consultant who works with ambitious teams to improve the quality of their software products and processes. He specialises in agile and lean quality improvement, in particular agile testing, specification by example and behaviour driven development. Gojko’s book Specification by Example was awarded the #2 spot on the top 100 agile books for 2012. In 2011, he was voted by peers as the most influential agile testing professional, and his blog won the UK agile award for the best online publication in 2010.",
+         "Img": "http://www.agileturas.lt/assets/img/people/80x80/gojko-adzic.png"  
+    }
+    ],
+    "Topic": "Closing keynote - Reinventing software quality",
+    "Track": "",
+   
+   
+    "Summary": "The needs to go faster to market and cut costs, dominating theindustry lately, are significantly changing the landscape of softwarequality. Many pillars of successful quality strategies in the past arejust slowing down delivery too much. To be competitive in the future,we have to switch from quality as a cost centre to quality asvalue-add, but for that we have to completely change the way wemeasure, assure and define quality. This is a talk for anyone seriousabout software delivery, regardless of the role in their process.",
+    "Logo": ""
+  }
+]
