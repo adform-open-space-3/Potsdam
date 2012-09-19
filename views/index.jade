@@ -7,11 +7,7 @@ block content
         var childImgs = $(element).children('img');
         if (childImgs.length > 1)
         {
-          childImgs.not(':first').addClass('hidden');
-          childImgs.addClass('animated');
-          setInterval(function() {
-            childImgs.toggleClass('hidden');
-          }, 3500);
+          childImgs.first().addClass('top');
         }
       });
     });

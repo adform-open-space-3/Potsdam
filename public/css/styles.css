@@ -27,15 +27,91 @@ li.ui-btn div.ui-btn-inner div.ui-btn-text a.li-btn {
   opacity: 1;
 }
 
-.img-container img.animated {
-  -webkit-transition: opacity 1.5s ease-in-out;
-  -moz-transition: opacity 1.5s ease-in-out;
-  -o-transition: opacity 1.5s ease-in-out;
-  transition: opacity 1.5s ease-in-out;
+@-webkit-keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.img-container img.animated.hidden {
-  opacity: 0;
+@-moz-keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
+@-o-keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.img-container img.top {
+  z-index: 1;
+  
+  -webkit-animation-name: fadeAnimation;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 7s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: fadeAnimation;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 7s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: fadeAnimation;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 7s;
+  -o-animation-direction: alternate;
+  
+  animation-name: fadeAnimation;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
 
