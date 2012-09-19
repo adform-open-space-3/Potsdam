@@ -1,3 +1,41 @@
 .ui-br {
   border-bottom: none;
 }
+
+li.ui-btn div.ui-btn-inner {
+  height:81px;
+}
+
+li.ui-btn div.ui-btn-inner div.ui-btn-text a.li-btn {
+  min-height:60px;
+  padding-left:100px;
+}
+
+.img-container {
+  position: absolute;
+  left:1px;
+  top: 0px;
+  margin:0px;
+  height:80px;
+  width:80px;
+}
+
+.img-container img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.img-container img.animated {
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.img-container img.animated.hidden {
+  opacity: 0;
+}
+
+

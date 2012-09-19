@@ -1,6 +1,20 @@
 extends layout
 
 block content
+  script(type='text/javascript')
+    $(function(){
+      $('div.img-container').each(function(index, element) {
+        var childImgs = $(element).children('img');
+        if (childImgs.length > 1)
+        {
+          childImgs.not(':first').addClass('hidden');
+          childImgs.addClass('animated');
+          setInterval(function() {
+            childImgs.toggleClass('hidden');
+          }, 3500);
+        }
+      });
+    });
   div(data-role='header')
     h1(style='margin-left: 10%; margin-right: 10%')=title
     a(href='/about', data-icon='info', class='ui-btn-right', data-iconpos='notext', rel='external') About
@@ -9,9 +23,11 @@ block content
     ul(data-role='listview', data-filter='true', data-filter-placeholder='Search')
       each item in agenda
         - var icon = user.hasRated(item.Url) ? 'check' : 'arrow-r'
-        li(data-icon=icon)
-          a(href=item.Url)
-            img(src=item.Img(), class='ul-li-thumb', style='height:80px; width:80px')
+        li(data-icon=icon, style='display:block; height: 83px')
+          a(href=item.Url, class='li-btn')
+            div.img-container
+              each presenter in item.Presenters
+                img(src=presenter.Img, class='ul-li-thumb', style='height:80px; width:80px')
             h3.ui-li-heading
               span=item.Presenter
             .ui-li-desc(style='margin-bottom:0')
