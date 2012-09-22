@@ -1,13 +1,37 @@
 var express = require('express');
 var mongoose = require('mongoose');
+var mermin = require('mermin');
 var http = require('http');
 var path = require('path');
-var expressUglify = require('express-uglify');
 var routes = require('./routes');
 var models = require('./models')(mongoose);
 var app = express();
 
 app.locals.title = 'Agile Tour Vilnius 2012';
+
+var resources = new mermin({
+  path: path.join(__dirname, '/public'),
+  config: {
+            'js' : {
+                'potsdam' : [
+                    '/js/jquery.js',
+                    '/js/jquery.mobile.js'
+                ]
+            },
+            'css' : {
+                'potsdam' : [
+                    '/css/jquery.mobile.css',
+                    '/css/jquery.mobile.structure.css',
+                    '/css/jquery.mobile.theme.css',
+                    '/css/styles.css'
+                ]
+            }
+          },
+  merge: true,
+  minify: true,
+  name: 'resources',
+  watch: true
+});
 
 app.configure(function() {
   app.set('port', process.env.PORT || 3000);
@@ -19,6 +43,7 @@ app.configure(function() {
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.static(path.join(__dirname, '/public')));
+  app.use(resources.middleware);
 });
 
 app.configure('development', function() {
@@ -30,9 +55,6 @@ app.configure('development', function() {
 
 app.configure('production', function() {
   app.use(express.errorHandler());
-  app.use(expressUglify.middleware({
-    src: __dirname + '/public'
-  }));
 
   mongoose.connect(process.env.MONGOLAB_URI);
 });
