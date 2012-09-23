@@ -16,7 +16,7 @@ block content
     a(href='/about', data-icon='info', class='ui-btn-right', data-iconpos='notext', rel='external') About
 
   div(data-role='content')
-    ul(data-role='listview', data-filter='true', data-filter-placeholder='Search')
+    ul(data-role='listview', data-filter='true', data-filter-placeholder='Search', id='index-list')
       each item in agenda
         - var icon = user.hasRated(item.Url) ? 'check' : 'arrow-r'
         li(data-icon=icon, style='display:block; height: 83px')

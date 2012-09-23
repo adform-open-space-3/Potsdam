@@ -2,7 +2,7 @@
   border-bottom: none;
 }
 
-li.ui-btn div.ui-btn-inner {
+#index-list li.ui-btn div.ui-btn-inner {
   height:81px;
 }
 
