@@ -2,6 +2,20 @@ extends layout
 
 block content
   script(type='text/javascript')
+    
+    var _adftrack = {
+      pm: 94848,
+      id: 1775965
+    };
+    $(function(){
+      var s=document.createElement('script');
+      s.type='text/javascript';
+      s.async=true;
+      s.src='https://track.adform.net/serving/scripts/trackpoint/async/';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    });
+
     $(function(){
       $('div.img-container').each(function(index, element) {
         var childImgs = $(element).children('img');
