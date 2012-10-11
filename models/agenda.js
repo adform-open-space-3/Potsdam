@@ -24,8 +24,16 @@ agenda.forEach(function(element) {
   element.Url = urlify(element.Presenter).toLowerCase();
 
   matches = element.Time.match(/(\d{1,2})\.(\d\d) - (\d{1,2}).(\d\d)/);
-  element.StartHours = matches[1];
-  element.StartMinutes = matches[2];
+  if (matches && matches.length >=3)
+  {
+    element.StartHours = matches[1];
+    element.StartMinutes = matches[2];
+  }
+  else
+  {
+    element.StartHours = "0";
+    element.StartMinutes = "0";
+  }
 });
 
 module.exports = agenda;
