@@ -7,7 +7,7 @@ module.exports = function(app, models) {
       });
     });
   });
-  
+
   app.get('/about', function(req, res) {
     res.redirect('http://www.agileturas.lt/');
   });
@@ -16,9 +16,36 @@ module.exports = function(app, models) {
     res.render('versions');
   });
 
+  app.get('/personal', function(req, res) {
+    getUser(req, res, function(user) {
+      res.render('personal', {
+        user: user
+      });
+    });
+  });
+
+  app.post('/personal', function(req, res) {
+    getUser(req, res, function(user) {
+      user.name = req.body.name;
+      user.surname = req.body.surname;
+      user.company = req.body.company;
+      user.email = req.body.email;
+
+      user.recommend = req.body.recommend;
+      user.attend = req.body.attend;
+      user.registered = req.body.registered;
+
+      user.source = req.body.source;
+      user.responsibility = req.body.responsibility;
+
+      user.save();
+      res.redirect('/');
+    });
+  });
+
   app.get('/:presenter', function(req, res) {
     var presentation = models.agenda.filter(function(element) {
-      return element.Url === req.params.presenter.toLowerCase(); 
+      return element.Url === req.params.presenter.toLowerCase();
     })[0];
 
     if (presentation) {
@@ -41,7 +68,7 @@ module.exports = function(app, models) {
       res.redirect('/');
     });
   });
-  
+
   function getUser(req, res, callback) {
     var uid = req.cookies.uid;
     if (uid) {
