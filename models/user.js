@@ -5,6 +5,8 @@ module.exports = function(mongoose) {
     surname: String,
     company: String,
     email: String,
+    recommend: Number,
+    attend: Number,
     feedbacks: [{
       presenter: String,
       rating: Number,

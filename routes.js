@@ -26,6 +26,8 @@ module.exports = function(app, models) {
       user.surname = req.body.surname;
       user.company = req.body.company;
       user.email = req.body.email;
+      user.recommend = req.body.recommend;
+      user.attend = req.body.attend;
 
       user.save();
       res.redirect('/');

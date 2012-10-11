@@ -26,4 +26,17 @@ block content
       textarea(id='email', name='email')
         =user.email
 
+    - var yesno = [{i: 0, text: 'No'}, {i: 1, text: 'Yes'}]
+    div(data-role='fieldcontain')
+      label(for='recommend') Would you recommend Agile Tour?
+      select(name='recommend', id='recommend', data-role='slider')
+        each item in yesno
+          option(value=item.i, selected=user.recommend == item.i)=item.text
+
+    div(data-role='fieldcontain')
+      label(for='attend') Would you attend Agile Tour next year?
+      select(name='attend', id='attend', data-role='slider')
+        each item in yesno
+          option(value=item.i, selected=user.attend == item.i)=item.text
+
     input(type='submit', value='Send', data-icon='check', data-theme='b', data-direction='reverse', data-nav-type='save', href='/')
