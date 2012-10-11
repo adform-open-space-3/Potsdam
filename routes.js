@@ -13,7 +13,7 @@ module.exports = function(app, models) {
   });
 
   app.get('/versions', function(req, res) {
-    res.render('versions');
+    res.render('versions'); 
   });
 
   app.get('/personal', function(req, res) {
@@ -66,6 +66,28 @@ module.exports = function(app, models) {
       user.addFeedback(req.body);
       user.save();
       res.redirect('/');
+    });
+  });
+
+  app.get('/winners/:count',function(req, res){
+    
+    var count = parseInt(req.params.count);
+
+    models.User.find({}, function(err, users) {
+        
+      var luckyUsers = [];
+      if (users.length <= count) {
+        luckyUsers = users;
+      } else {
+        for (var i = 0; i < count; i++) {
+          var luckyIndex = Math.floor(Math.random() * users.length);
+          luckyUsers.push(users[luckyIndex]);
+        };
+      }
+
+      res.render('winners', {
+        luckyUsers : luckyUsers
+      });
     });
   });
 

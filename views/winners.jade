@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  div(data-role='header')
+    a(data-role='button', data-icon='arrow-l', data-direction='reverse', data-iconpos='notext', href='/') Back
+    h1 Winners
+
+  ul
+    each lu in luckyUsers
+      - var fullName = lu.name + ' ' + lu.surname
+      li=fullName
