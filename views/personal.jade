@@ -45,4 +45,20 @@ block content
         each item in yesno
           option(value=item.i, selected=user.registered == item.i)=item.text
 
+    div(data-role='fieldcontain')
+      label(for='source') How did you find out about Agile Tour?
+      select(id='source', name='source', data-native-menu='false')
+        option(value='-1') Choose
+        - var sources = [{i: 1, text: 'Agile Tour website'}, {i: 2, text: 'LinkedIn'}, {i: 3, text: 'Facebook'}, {i: 4, text: 'Message board'}, {i: 5, text: 'From friends'}, {i: 6, text: 'Other'}]
+        each item in sources
+          option(value=item.i, selected=user.source == item.i)=item.text
+
+    div(data-role='fieldcontain')
+      label(for='responsibility') What are your main responsibilities?
+      select(id='responsibility', name='responsibility', data-native-menu='false')
+        option(value='-1') Choose
+        - var responsibilities = [{i: 1, text: 'Manager'}, {i: 2, text: 'Analyst'}, {i: 3, text: 'Project Manager'}, {i: 4, text: 'Architect'}, {i: 5, text: 'Product Manager'}, {i: 6, text: 'Developer'}, {i: 7, text: 'Product Owner'}, {i: 8, text: 'Tester'}, {i: 9, text: 'Scrum Master'}]
+        each item in responsibilities
+          option(value=item.i, selected=user.responsibility == item.i)=item.text
+
     input(type='submit', value='Send', data-icon='check', data-theme='b', data-direction='reverse', data-nav-type='save', href='/')

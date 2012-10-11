@@ -8,6 +8,8 @@ module.exports = function(mongoose) {
     recommend: Number,
     attend: Number,
     registered: Number,
+    source: Number,
+    responsibility: Number,
     feedbacks: [{
       presenter: String,
       rating: Number,

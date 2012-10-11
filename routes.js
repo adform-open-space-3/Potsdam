@@ -31,6 +31,9 @@ module.exports = function(app, models) {
       user.attend = req.body.attend;
       user.registered = req.body.registered;
 
+      user.source = req.body.source;
+      user.responsibility = req.body.responsibility;
+
       user.save();
       res.redirect('/');
     });
