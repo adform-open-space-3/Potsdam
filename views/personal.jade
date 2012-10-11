@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(data-role='header')
+    a(data-role='button', data-icon='arrow-l', data-direction='reverse', data-iconpos='notext', href='/') Back
+    h1 Personal Details
+
+  form(data-role='content', action='/personal', method='post', data-ajax='false')
+    div(data-role='fieldcontain')
+      label(for='name') Name:
+      textarea(id='name', name='name')
+        =user.name
+
+    div(data-role='fieldcontain')
+      label(for='surname') Surname:
+      textarea(id='surname', name='surname')
+        =user.surname
+
+    div(data-role='fieldcontain')
+      label(for='company') Company:
+      textarea(id='company', name='company')
+        =user.company
+
+    div(data-role='fieldcontain')
+      label(for='email') Email:
+      textarea(id='email', name='email')
+        =user.email
+
+    input(type='submit', value='Send', data-icon='check', data-theme='b', data-direction='reverse', data-nav-type='save', href='/')
