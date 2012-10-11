@@ -39,4 +39,10 @@ block content
         each item in yesno
           option(value=item.i, selected=user.attend == item.i)=item.text
 
+    div(data-role='fieldcontain')
+      label(for='registered') Would you like to get information about future events?
+      select(name='registered', id='registered', data-role='slider')
+        each item in yesno
+          option(value=item.i, selected=user.registered == item.i)=item.text
+
     input(type='submit', value='Send', data-icon='check', data-theme='b', data-direction='reverse', data-nav-type='save', href='/')
